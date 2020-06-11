@@ -1,6 +1,6 @@
 public class Lab2{
 	//Формула треугольника Герона
-	public static double computeArea(Point3d a,Point3d b,Point3d c){
+	public static double computeArea(Point3D a,Point3D b,Point3D c){
 		double disa=(a.distanceTo(b));
 		double disb=(b.distanceTo(c));
 		double disc=(c.distanceTo(a));
@@ -9,9 +9,9 @@ public class Lab2{
 
 	}
 	public static void main(String[] args){
-		Point3d a = new Point3d();//Создание первой точки 
-		Point3d b = new Point3d(2,4,10);//Создание второй точки 
-		Point3d c = new Point3d(4,12,7);//Создание третьей точки
+		Point3D a = new Point3D();//Создание первой точки 
+		Point3D b = new Point3D(2,4,10);//Создание второй точки 
+		Point3D c = new Point3D(4,12,7);//Создание третьей точки
 		if (a.compare(b) || a.compare(c) || c.compare(b))//Проверка совпадений
 			System.out.println("Incorrect coordinates");
 		else {
